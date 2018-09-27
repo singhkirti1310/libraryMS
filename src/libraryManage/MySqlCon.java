@@ -2,6 +2,7 @@ package libraryManage;
 
 import java.sql.*;
 
+/
 public class MySqlCon 
 {
 	private String jdbcDriver ="com.mysql.jdbc.Driver";
@@ -41,7 +42,7 @@ public class MySqlCon
 			System.out.println(e);
 		}
 	}
-	
+	//comment
 	 public void createTable1() 
 	 {
 	        String myTableName = "CREATE TABLE AgentDetail (" 

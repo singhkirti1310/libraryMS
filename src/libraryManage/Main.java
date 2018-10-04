@@ -5,10 +5,9 @@ public class Main
 	//this is comment
 	public static void main(String args[])
 	{
-		MySqlCon msc=new MySqlCon();
-		msc.dbCon();
-		msc.createDb();
-		//msc.createDatabase();
-		msc.createTable1();
+		
+		MySqlCon.getInstance().dbCon();
+		MySqlCon.getInstance().createDb();
+		MySqlCon.getInstance().createTable1();
 	}
 }

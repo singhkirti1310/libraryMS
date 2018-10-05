@@ -14,9 +14,9 @@ public class Main
 		MySqlCon.getInstance().createDb();
 		Tables tb=new Tables();
 		tb.createTable();
-		InsertData insert=new InsertData();
-		insert.data();
+		InsertData id=new InsertData();
 		
+		id.insert();
 		
 	}
 }

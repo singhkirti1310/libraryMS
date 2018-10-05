@@ -54,7 +54,7 @@ public class MySqlCon
 	{
 		try
 		{
-			setSt(con.createStatement());
+			setSt(getCon().createStatement());
 			int result=getSt().executeUpdate("CREATE DATABASE IF NOT EXISTS " + dbName); // why int?
 		}
 		catch (Exception e)
@@ -73,6 +73,11 @@ public class MySqlCon
 		 }
 		 return object;
 	 }
+
+	public static Connection getCon() {
+		return con;
+	}
+
 
 	
 	

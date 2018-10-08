@@ -1,7 +1,11 @@
 package dbManager;
 
+import java.sql.PreparedStatement;
+
 public class Tables 
 {
+	
+
 
 	public void createTable() 
 	 {
@@ -66,5 +70,6 @@ public class Tables
 		        }
 	        
 	    }
+	
 	 
 }

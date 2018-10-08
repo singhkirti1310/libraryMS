@@ -14,6 +14,7 @@ public class MySqlCon
 	
 	private static Connection con; //static connection object
 	private static Statement st; // static Statement object
+	private PreparedStatement pst;
 	
 	private static MySqlCon object; // static object of class type
 	
@@ -77,7 +78,6 @@ public class MySqlCon
 	public static Connection getCon() {
 		return con;
 	}
-
 
 	
 	
